@@ -1,0 +1,161 @@
+.feedback-form {
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    margin: 50px 0;
+  }
+  
+  .feedback-form h2 {
+    color: white;
+  }
+  
+  .feedback-form label {
+    color: white;
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .feedback-form input[type="text"] {
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    width: 300px;
+  }
+  .label{
+    margin-top: 10px;
+  }
+  .feedback-form button {
+    padding: 10px 20px;
+    background-color: #7ed957;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0px 4px 15px #7ed957;
+  }
+  
+  .feedback-form button:hover {
+    background-color: #0088cc;
+  }
+  
+  /* Accordion Styling */
+  .accordion {
+    max-width: 400px;
+    margin: 80px auto;
+  }
+  
+  .accordion-item {
+    margin-bottom: 10px;
+  }
+  
+  .accordion-header {
+    background-color: #000;
+    color: white;
+    padding: 10px;
+    text-align: left;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+    box-shadow: 0px 4px 10px rgba(137, 151, 140, 0.5);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 60px;
+    right: 10px;
+  }
+  .accordion-header i{
+    font-size: 20px;
+  }
+  
+  /* Hover effect */
+  .accordion-header:hover {
+    background-color: #1b1d32;
+  }
+  
+  /* Accordion Body */
+  .accordion-body {
+    position: fixed;
+    top: 120px;
+    right: 10px;
+    padding: 15px;
+    background-color: #000;
+    display: none;
+    color: white;
+    border-radius: 0 0 10px 10px;
+    font-size: 10px;
+    line-height: 1.6;
+    box-shadow: 0px 4px 10px rgba(137, 151, 140, 0.5);
+  }
+  
+  /* Active class to show the accordion body */
+  .accordion-header.active + .accordion-body {
+    display: block;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .about_section p {
+        max-width: 100%;
+        padding: 0 20px;
+    }
+  
+    .feedback-form input[type="text"] {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+  
+    .accordion-header {
+        font-size: 16px;
+        padding: 12px;
+    }
+  
+    .accordion-body {
+        font-size: 14px;
+        padding: 10px;
+    }
+  }
+  .countdown_section {
+    text-align: center;
+    /* color: #fff; */
+    /* background-color: #fff; */
+    box-shadow: 4px 4px 15px #d4d5d0;
+    padding: 40px;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 400px;
+  }
+  
+  .countdown_section h1 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .countdown_section p {
+    margin-bottom: 20px;
+    font-size: 13px;
+  }
+  
+  #countdown {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .countdown_item {
+    margin: 0 10px;
+    text-align: center;
+  }
+  
+  .countdown_item span {
+    font-size: 24px;
+    font-weight: bold;
+    color: #7ed957;
+  }
+  
+  .countdown_item p {
+    font-size: 14px;
+  }
