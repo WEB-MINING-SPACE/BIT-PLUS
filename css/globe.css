@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Afacad Flux", sans-serif;
+}
+a{
+  text-decoration: none;
+  color: #000;
+}
+body{
+    background-color: white;
+}
+
+.navber h1{
+    font-size: xx-large;
+}
+.navber h5{
+    font-size: larger;
+}
+.navber{
+    padding: 10px 30px 10px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid white;
+ }
+.id_lvl{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+  .flex-copy{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #copyButton{
+    margin-left: 4px;
+    border: none;
+  }
+  #copyMessage {
+    position: absolute;
+    bottom: 1px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333;
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 12px;
+    display: none;
+  }
+  .active{
+    box-shadow: 4px 4px 15px #7ed957;
+    background-color: #7ed957;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+  }
+  .navigation{
+    position: fixed;
+    background: white;
+    bottom: -4px;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 80px;
+    border-top: 1px dashed #7ed957;
+  }
