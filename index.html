@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BIT PLUS</title>
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/globe.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navber">
+        <h2 class="color" id="name"></h2>
+        <div class="id_lvl">
+            <div class="flex-copy">ID:<p id="textToCopy"></p><button id="copyButton"><i class="fa-regular fa-copy"></i></button><span id="copyMessage">Copied!</span></div>
+            <!-- <p id="lvl"></p> -->
+        </div>
+    </nav>
+
+    <!-- Welcome section -->
+    <div id="welcome" class="welcome-container">
+        <div class="welcome-message">
+          <h2>Welcome to Our Mining web!</h2>
+          <p>Enter your name to create an account:</p>
+          <input type="name" id="inputed_name" placeholder="Your account name..." minlength="3" maxlength="12">
+          <button type="submit" onclick="savename()">Submit</button>
+        </div>
+    </div>
+
+    <!-- Main section -->
+    <div>
+        <div class="sec_1">
+          <div class="sec_1_coin">
+            <img width="300px" height="300px" src="bit-plus.png" alt="">
+          </div>
+        </div>
+        <div class="sec_1_content">
+            <h5 id="coin_qty"></h5>
+        </div>
+    </div>
+
+    <!-- Claim section -->
+    <div class="claim">
+        <button id="claim_coin" class="claimable" style="display: none;" onclick="claimCoin()">
+            <i class="fa-brands fa-gg-circle"></i> Claim 72 Coin
+        </button>
+        <button id="farming" class="farming" style="display: none;">
+            Farming... <span id="farming_time">00:00:00</span>
+        </button>
+        <button id="start_farming" style="display: block;" onclick="startFarming()">Start Farming</button>
+    </div>
+    
+
+    <!-- Navigation section -->
+     <div class="navigation">
+         <div class="home_icon">
+            <a href="index.html"><i class="fa-solid fa-earth-asia active"></i></a>
+         </div>
+         <div class="home_icon">
+            <a href="tasks.html"><i class="fa-solid fa-circle-radiation"></i></a>
+         </div>
+         <div class="home_icon">
+            <a href="airdrop.html"><i class="fa-solid fa-parachute-box"></i></a>
+         </div>
+    </div>
+
+<script src="js/globe.js"></script>
+<script src="js/index.js"></script>
+
+</body>
+</html>

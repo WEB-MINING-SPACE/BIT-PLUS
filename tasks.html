@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BIT PLUS</title>
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/tasks.css">
+    <link rel="stylesheet" href="css/globe.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navber">
+        <h2 class="color" id="name"></h2>
+        <div class="id_lvl">
+            <div class="flex-copy">ID:<p id="textToCopy"></p><button id="copyButton"><i class="fa-regular fa-copy"></i></button><span id="copyMessage">Copied!</span></div>
+            <!-- <p id="lvl"></p> -->
+        </div>
+    </nav>
+
+    <div class="sec_2">
+        <div class="task_flex">
+            <h2 class="task_flex_h2">Tasks:</h2>
+        </div>
+
+        <div class="d_block">
+            <button id="login" class="login" onclick="claimLogin()">Claim Login reward...<i class="fa-solid fa-gift"></i></button>
+            <button id="logined" class="logined"> login reward claimed...<i class="fa-solid fa-circle-check" style="color: #7ed957;"></i></button>
+        </div>
+
+        <!-- popup -->
+         <div id="popup">
+         </div>
+
+        <div class="d_block">
+            <div class="cards" id="taskCardsContainer">
+                
+                <!-- <div class="task_card">
+                    <div class="card_c_i_div">
+                        <button href="https://t.me/examplegroup" target="_blank">
+                            <i class="fa-brands fa-telegram color"></i>
+                            Join Crypto Experts Telegram
+                        </button>
+                    </div>
+                    <div class="card_c_i_div">
+                        <p>10 <i class="fa-brands fa-gg-circle"></i></p>
+                    </div>
+                </div>
+                
+                <div class="task_card">
+                    <div class="card_c_i_div">
+                        <button href="https://www.youtube.com/watch?v=xyz789" target="_blank">
+                            <i class="fa-brands fa-youtube"></i>
+                            Best YouTube Channels for Crypto
+                        </button>
+                    </div>
+                    <div class="card_c_i_div">
+                        <p>7 <i class="fa-brands fa-gg-circle"></i></p>
+                    </div>
+                </div>
+                
+                <div class="task_card">
+                    <div class="card_c_i_div">
+                        <button href="https://t.me/examplechannel" target="_blank">
+                            <i class="fa-brands fa-telegram color"></i>
+                            Follow Crypto Insights on Telegram
+                        </button>
+                    </div>
+                    <div class="card_c_i_div">
+                        <p>9 <i class="fa-brands fa-gg-circle"></i></p>
+                    </div>
+                </div>
+            
+                <div class="task_card">
+                    <div class="card_c_i_div">
+                        <button href="https://www.youtube.com/watch?v=def456" target="_blank">
+                            <i class="fa-brands fa-youtube color"></i>
+                            YouTube Guide to Day Trading
+                        </button>
+                    </div>
+                    <div class="card_c_i_div">
+                        <p>8 <i class="fa-brands fa-gg-circle"></i></p>
+                    </div>
+                </div>
+                
+                <div class="task_card">
+                    <div class="card_c_i_div">
+                        <button href="https://www.youtube.com/watch?v=xyz456" target="_blank">
+                            <i class="fa-brands fa-youtube color"></i>
+                            Top 10 Crypto Tips on YouTube
+                        </button>
+                    </div>
+                    <div class="card_c_i_div">
+                        <p>10 <i class="fa-brands fa-gg-circle"></i></p>
+                    </div>
+                </div>
+                
+                <div class="task_card">
+                    <div class="card_c_i_div">
+                        <button href="https://t.me/crypto_channel" target="_blank">
+                            <i class="fa-brands fa-telegram color"></i>
+                            Join Our Crypto Channel on
+                        </button>
+                    </div>
+                    <div class="card_c_i_div">
+                        <p>8 <i class="fa-brands fa-gg-circle"></i></p>
+                    </div>
+                </div>
+                <div class="task_card">
+                    <div class="card_c_i_div">
+                        <button class="color watched" target="_blank" onclick="event.preventDefault();">
+                            <i class="fa-brands fa-instagram color watched"></i>
+                            Latest Crypto Trends on Instagram
+                        </button>
+                    </div>
+                    <div class="card_c_i_div">
+                        <i class="fa-solid fa-circle-check" style="color: #00aaff;"></i>
+                    </div>
+                </div>
+                <div class="task_card">
+                    <div class="card_c_i_div">
+                        <button class="color watched"target="_blank" onclick="event.preventDefault();">
+                            <i class="fa-brands fa-instagram color watched"></i>
+                            Latest Crypto Trends on Instagram
+                        </button>
+                    </div>
+                    <div class="card_c_i_div">
+                        <i class="fa-solid fa-circle-check" style="color: #00aaff;"></i>
+                    </div>
+                </div> -->
+                
+            </div>
+            
+        </div>
+        <!-- code_popup -->
+        <div id="code_popup" class="code_popup">
+        </div>
+
+        <div class="d_block">
+            <h3>Reffer system will coming soon!</h3>
+        </div>
+    </div>
+
+    <!-- errorpop -->
+     <div id="errorpop" class="errorpop">
+     </div>
+     <!-- success -->
+     <div id="success" class="success">
+
+     </div>
+     <div style="height: 100px;"></div>
+    <!-- navigation -->
+    <div class="navigation">
+        <div class="home_icon">
+           <a href="index.html"><i class="fa-solid fa-earth-asia "></i></a>
+        </div>
+        <div class="home_icon">
+           <a href="tasks.html"><i class="fa-solid fa-circle-radiation active"></i></a>
+        </div>
+        <div class="home_icon">
+           <a href="airdrop.html"><i class="fa-solid fa-parachute-box"></i></a>
+        </div>
+   </div>
+
+    <script src="js/globe.js"></script>
+    <script src="js/tasks.js"></script>
+</body>
+</html>
