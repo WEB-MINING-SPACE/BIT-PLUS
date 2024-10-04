@@ -59,6 +59,14 @@ const taskData = [
         icon: '<i class="fa-brands fa-telegram me"></i>',
         coins: 150,
         code: "OKAY"
+    },
+    {
+        title: "[code]Bad sides of media...,",
+        url: "https://youtu.be/qunPplPqC4A?si=cl9rOu2yZ39gEgsV",
+        id: "1012",
+        icon: '<i class="fa-brands fa-youtube me"></i>',
+        coins: 150,
+        code: "BAD"
     }
 ];
 const dtaskData = [
@@ -98,6 +106,14 @@ const dtaskData = [
         title: "what is crypto...,",
         url: "https://youtu.be/k6jOKRp6Nh0?si=si5gjIcmA7QwIIJ_",
         id: "1010",
+        icon: '<i class="fa-brands fa-youtube me"></i>',
+        coins: 75,
+        code: "OKAY"
+    },
+    {
+        title: "Bad sides of social media...,",
+        url: "https://youtu.be/k6jOKRp6Nh0?si=si5gjIcmA7QwIIJ_",
+        id: "1013",
         icon: '<i class="fa-brands fa-youtube me"></i>',
         coins: 75,
         code: "OKAY"
