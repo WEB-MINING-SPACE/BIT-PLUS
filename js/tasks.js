@@ -437,3 +437,13 @@ function claimLogin() {
         </div>`;
     document.getElementById('popup').style.display = 'flex';
 }
+function copyBITPLUS(){
+    const textToCopy = 'https://t.me/bit_plus_webms_bot';
+    navigator.clipboard.writeText(textToCopy)
+    document.getElementById('popup').innerHTML = `
+        <div class="pop_text">
+            <h4>Link is copied!</h4>
+            <button class="okay" onclick="document.getElementById('popup').style.display='none'">Okay</button>
+        </div>`;
+    document.getElementById('popup').style.display = 'flex';
+}
