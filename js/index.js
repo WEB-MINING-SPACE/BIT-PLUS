@@ -83,7 +83,7 @@ function claimCoin() {
         // alert(`You claimed 72 coins! Total coins: ${workLine.coin}`);
 
         // Show the start farming button again
-        document.getElementById('coin_qty').innerHTML = `<i class="fa-solid fa-gg-circle"></i> ${workLine.coin}`;
+        document.getElementById('coin_qty').innerHTML = `<i class="fa-brands fa-gg-circle"></i> ${workLine.coin}`;
         document.getElementById('claim_coin').style.display = 'none';
         document.getElementById('start_farming').style.display = 'block';
     }
