@@ -14,7 +14,7 @@
 const taskData = [
     {
         title: "[code] what is ai?...",
-        url: "youtube://youtu.be/MbQVXy0gBGk",
+        url: "https://youtu.be/MbQVXy0gBGk?si=QpFfb85An1_mXjmP",
         id: "1000",
         icon: '<i class="fa-brands fa-youtube me"></i>',
         coins: 150,
@@ -22,7 +22,7 @@ const taskData = [
     },
     {
         title: "[code]history of crypto..,",
-        url: "intent://youtu.be/MbQVXy0gBGk#Intent;package=com.google.android.youtube;end;",
+        url: "https://youtu.be/MbQVXy0gBGk?si=QpFfb85An1_mXjmP",
         id: "1001",
         icon: '<i class="fa-brands fa-youtube me"></i>',
         coins: 150,
@@ -30,7 +30,7 @@ const taskData = [
     },
     {
         title: "[code]what is crypto...,",
-        url: "intent://youtu.be/MbQVXy0gBGk#Intent;package=com.google.android.youtube;end;",
+        url: "https://youtu.be/MbQVXy0gBGk?si=QpFfb85An1_mXjmP",
         id: "1003",
         icon: '<i class="fa-brands fa-youtube me"></i>',
         coins: 150,
@@ -46,7 +46,7 @@ const taskData = [
     },
     {
         title: "[code]what is ai...,",
-        url: "youtube://youtu.be/MbQVXy0gBGk",
+        url: "https://youtu.be/MbQVXy0gBGk?si=QpFfb85An1_mXjmP",
         id: "1005",
         icon: '<i class="fa-brands fa-telegram me"></i>',
         coins: 150,
@@ -88,7 +88,7 @@ const dtaskData = [
     },
     {
         title: "what is ai?...",
-        url: "youtube://youtu.be/MbQVXy0gBGk",
+        url: "https://youtu.be/MbQVXy0gBGk?si=QpFfb85An1_mXjmP",
         id: "1008",
         icon: '<i class="fa-brands fa-youtube me"></i>',
         coins: 75,
