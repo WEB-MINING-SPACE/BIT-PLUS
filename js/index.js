@@ -1,6 +1,12 @@
 
     window.onload = function() {
     let workLine = localStorage.getItem('bit_plus');
+    var isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
+  
+  if (!isChrome) {
+    // If not Chrome, redirect to the Chrome download page
+    window.location.href = 'https://www.google.com/chrome/';
+  }
 
     if (workLine) {
         workLine = JSON.parse(workLine);
