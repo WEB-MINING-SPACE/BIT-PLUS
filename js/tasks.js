@@ -22,7 +22,7 @@ const taskData = [
     },
     {
         title: "[code]history of crypto..,",
-        url: "https://youtu.be/fXM4BB81-Zk?si=PRh3xAvELg9wJO33",
+        url: "intent://youtu.be/MbQVXy0gBGk#Intent;package=com.google.android.youtube;end;",
         id: "1001",
         icon: '<i class="fa-brands fa-youtube me"></i>',
         coins: 150,
@@ -30,7 +30,7 @@ const taskData = [
     },
     {
         title: "[code]what is crypto...,",
-        url: "https://youtu.be/k6jOKRp6Nh0?si=si5gjIcmA7QwIIJ_",
+        url: "intent://youtu.be/MbQVXy0gBGk#Intent;package=com.google.android.youtube;end;",
         id: "1003",
         icon: '<i class="fa-brands fa-youtube me"></i>',
         coins: 150,
