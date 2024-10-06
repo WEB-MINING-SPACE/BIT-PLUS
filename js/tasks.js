@@ -14,7 +14,7 @@
 const taskData = [
     {
         title: "[code] what is ai?...",
-        url: "https://youtu.be/MbQVXy0gBGk?si=AbxcftVj5KFLMx7r",
+        url: "youtube://youtu.be/MbQVXy0gBGk",
         id: "1000",
         icon: '<i class="fa-brands fa-youtube me"></i>',
         coins: 150,
@@ -46,7 +46,7 @@ const taskData = [
     },
     {
         title: "[code]what is ai...,",
-        url: "https://t.me/web_ms/5",
+        url: "youtube://youtu.be/MbQVXy0gBGk",
         id: "1005",
         icon: '<i class="fa-brands fa-telegram me"></i>',
         coins: 150,
@@ -88,7 +88,7 @@ const dtaskData = [
     },
     {
         title: "what is ai?...",
-        url: "https://youtu.be/MbQVXy0gBGk?si=AbxcftVj5KFLMx7r",
+        url: "youtube://youtu.be/MbQVXy0gBGk",
         id: "1008",
         icon: '<i class="fa-brands fa-youtube me"></i>',
         coins: 75,
