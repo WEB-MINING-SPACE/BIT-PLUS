@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete Local Storage Example</title>
+    <style>
+        #welcome {
+            display: none; /* Initially hide the welcome message */
+        }
+    </style>
+</head>
+<body>
+    <h2 class="color" id="name"><i class="fa-solid fa-user"></i></h2>
+    <div id="welcome">Welcome! Please log in.</div>
+    <button id="deleteButton">Delete Local Storage Data</button> <!-- Button to delete Local Storage -->
+    <h1>Work Line Data</h1>
+    <button onclick="workLineContainer()">show the data</button>
+    <div id="workLineContainer"></div>
+
+    <script>
+        function checkLocalStorage() {
+            const key = 'bit_plus'; // Key used to store the JSON data
+            const item = localStorage.getItem(key); // Retrieve item from Local Storage
+            const nameElement = document.getElementById('name'); // Reference to the name element
+            const welcomeElement = document.getElementById('welcome'); // Reference to the welcome element
+
+            if (item) {
+                const data = JSON.parse(item); // Parse the JSON string to an object
+                // Check if name exists and display it
+                if (data.name) {
+                    nameElement.innerHTML = `<i class="fa-solid fa-user"></i> ${data.name}`; // Show the name
+                    welcomeElement.style.display = 'none'; // Hide the welcome message
+                } else {
+                    nameElement.innerHTML = `<i class="fa-solid fa-user"></i>`; // Clear name display
+                    welcomeElement.style.display = 'block'; // Show welcome message
+                }
+            } else {
+                nameElement.innerHTML = `<i class="fa-solid fa-user"></i>`; // Clear name display
+                welcomeElement.style.display = 'block'; // Show welcome message
+            }
+        }
+
+        function deleteLocalStorage() {
+            const key = 'bit_plus'; // Key used to delete data
+            localStorage.removeItem(key); // Remove the item from Local Storage
+            document.getElementById('name').innerHTML = `<i class="fa-solid fa-user"></i>`; // Clear name display
+            document.getElementById('welcome').style.display = 'block'; // Show welcome message
+            alert('Local Storage data deleted.'); // Notify the user
+        }
+
+        // Add event listener to the button
+        document.getElementById('deleteButton').addEventListener('click', deleteLocalStorage);
+
+        // Check Local Storage when the DOM is fully loaded
+        window.onload = function() {
+            checkLocalStorage(); // Call function to check Local Storage
+        };
+               // Function to display localStorage data
+               function workLineContainer() {
+            // Retrieve the data from localStorage
+            const workLineData = localStorage.getItem('bit_plus');
+
+            // Check if the data exists
+            if (workLineData) {
+                // Parse the JSON data
+                const workLineArray = JSON.parse(workLineData);
+
+                // Get the container to display the data
+                const workLineContainer = document.getElementById('workLineContainer');
+
+                // Clear any existing content
+                workLineContainer.innerHTML = '';
+
+                // Display each item in the array
+                workLineArray.forEach(item => {
+                    const p = document.createElement('p');
+                    p.textContent = item; // Assuming each item is a string
+                    workLineContainer.appendChild(p);
+                });
+            } else {
+                // Handle case when there is no data
+                const workLineContainer = document.getElementById('workLineContainer');
+                workLineContainer.textContent = 'No work line data found.';
+            }
+        }
+
+        // Call the function to display the data
+        displayWorkLineData();
+    </script>
+</body>
+</html>
